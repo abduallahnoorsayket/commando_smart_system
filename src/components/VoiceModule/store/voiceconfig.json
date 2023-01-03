@@ -1,0 +1,30 @@
+{
+  "login": {
+    "message": "Good morning",
+    "friendly_mode": "What’s up!",
+    "corporate_mode": "How are you, today ?",
+    "formal_mode": "How are you doing, Sir!",
+    "event": "login"
+  },
+  "break-in": {
+    "message": "Good Noon",
+    "friendly_mode": "Good Noon frindly",
+    "corporate_mode": "Good Noon corporate",
+    "formal_mode": "Good Noon formal",
+    "event": "break-in"
+  },
+  "break-out": {
+    "message": "Good afternoon",
+    "friendly_mode": "Good afternoon friendly",
+    "corporate_mode": "Good afternoon corporate",
+    "formal_mode": "Good afternoon formal",
+    "event": "break-out"
+  },
+  "logout": {
+    "message": "Good Bye !",
+    "friendly_mode": "Good Bye friend.",
+    "corporate_mode": "Its too early! is everything all right?",
+    "formal_mode": "Do not do overwork please bye !",
+    "event": "logout"
+  }
+}
