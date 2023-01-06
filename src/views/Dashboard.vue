@@ -9,7 +9,12 @@
         <div class="row">
           <div class="col-md-9 text-white">
             <div class="float-left">
-              <h5><i class="metismenu-icon pe-7s-timer"></i> Dashboard</h5>
+              <div class="detailContaierr">
+                <h3>
+                  <i class="metismenu-icon pe-7s-timer"></i>
+                  <span class="dashText"> Dashboard</span>
+                </h3>
+              </div>
             </div>
             <div class="float-right">
               <button
@@ -31,53 +36,318 @@
                 <p>Everything is looking fine.</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-3"></div>
-        </div>
-        <!-- Time -->
-        <div class="row mb-0">
-          <!-- <div class="cl-md-6"></div> -->
-          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-            <notice-widget />
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="float-right">
-              <div class="timeContainer">
-                <div class="clock" id="intro" style="text-align: center">
-                  <h3>{{ currentTimestamp }}</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-card card">
+                  <div class="detailContaier">
+                    <h3>
+                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
+                      <span class="shutterSensor ml-2 mt-1"
+                        >Shutter sensor</span
+                      >
+                    </h3>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="text-center">
+                          <i class="fa-solid fas fa-bars mb-4"></i>
+                          <h5 class="card-title">Close</h5>
+                          <span class="text-muted">Last updated 2 hr. ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="calenderContainer mb-4 mt-2">
-                <DatePicker v-model="date" />
+              <div class="col-md-6">
+                <div class="main-card card">
+                  <div class="detailContaier">
+                    <h3>
+                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
+                      <span class="shutterSensor ml-2 mt-1">Smoke sensor</span>
+                    </h3>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="text-center">
+                          <i class="fa-solid fas fa-bars mb-4"></i>
+                          <h5 class="card-title">No smoke</h5>
+                          <span class="text-muted">Last updated 2 hr. ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-card card">
+                  <div class="detailContaier">
+                    <h3>
+                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
+                      <span class="shutterSensor ml-2 mt-1">Motion sensor</span>
+                    </h3>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="text-center">
+                          <i class="fa-solid fas fa-bars mb-4"></i>
+                          <h5 class="card-title">No Motion</h5>
+                          <span class="text-muted">Last updated 2 hr. ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-card card">
+                  <div class="detailContaier">
+                    <h3>
+                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
+                      <span class="shutterSensor ml-2 mt-1">Gas sensor</span>
+                    </h3>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="text-center">
+                          <i class="fa-solid fas fa-bars mb-4"></i>
+                          <h5 class="card-title">No Gas</h5>
+                          <span class="text-muted">Last updated 2 hr. ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="notification_container">
+              <div class="row mb-4">
+                <div class="col-md-12">
+                  <div class="float-left">
+                    <h4>
+                      <NotificationBell />
+                      <span class="Notification_title">Notification</span>
+                    </h4>
+                  </div>
+                  <div class="float-right mr-3">
+                    <!-- <i class="mdi mdi-dots-vertical"></i> -->
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                </div>
+              </div>
+              <h6 class="NotifySubHeader">Today</h6>
+              <div class="box shadow-sm rounded bg-Grey mb-3">
+                <div class="box-body p-0">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="p-3 d-flex align-items-center osahan-post-header"
+                      >
+                        <div class="dropdown-list-image mr-1 ml-1">
+                          <i class="fa-solid fas fa-lock"></i>
+                        </div>
+                        <div
+                          class="font-weight-normal mr-3 cursor_notification"
+                        >
+                          <div class="text-truncate NotificationBody">
+                            Lorem ipsum dolor sit amet,
+                            <span class="GreenText">consectetur</span>
+                            adipiscing elit.
+                          </div>
+                          <div class="small">2 hrs ago</div>
+                        </div>
 
-            <!-- <div class="calenderContainer float-right mb-4 mt-2">
-              <DatePicker v-model="date" />
-            </div> -->
-          </div>
-        </div>
-        <!--Calendar-->
-        <!-- <div class="row">
-          <div class=" col-sm-12 col-md-8 col-lg-9 widgetMargin">
-            <notice-widget/>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-3">
-            <div class="calenderContainer float-right mb-4">
-              <DatePicker v-model="date" />
+                        <!-- <span class="mb-0">
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm rounded"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="mdi mdi-dots-vertical"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box shadow-sm rounded bg-Grey mb-3">
+                <div class="box-body p-0">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="p-3 d-flex align-items-center osahan-post-header"
+                      >
+                        <div class="dropdown-list-image mr-1 ml-1">
+                          <i class="fa-solid fas fa-lock"></i>
+                        </div>
+                        <div
+                          class="font-weight-normal mr-3 cursor_notification"
+                        >
+                          <div class="text-truncate NotificationBody">
+                            Lorem ipsum dolor sit amet,
+                            <span class="redText">ipsum</span> adipiscing elit.
+                          </div>
+                          <div class="small">2 hrs ago</div>
+                        </div>
+
+                        <!-- <span class="mb-0">
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm rounded"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="mdi mdi-dots-vertical"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box shadow-sm rounded bg-Grey mb-3">
+                <div class="box-body p-0">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="p-3 d-flex align-items-center osahan-post-header"
+                      >
+                        <div class="dropdown-list-image mr-1 ml-1">
+                          <i class="fa-solid fas fa-lock"></i>
+                        </div>
+                        <div
+                          class="font-weight-normal mr-3 cursor_notification"
+                        >
+                          <div class="text-truncate NotificationBody">
+                            Lorem ipsum dolor sit amet,
+                            <span class="yellowText">consectetur</span>
+                            adipiscing elit.
+                          </div>
+                          <div class="small">2 hrs ago</div>
+                        </div>
+
+                        <!-- <span class="mb-0">
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm rounded"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="mdi mdi-dots-vertical"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <h6 class="NotifySubHeader">17 December</h6>
+              <div class="box shadow-sm rounded bg-Grey mb-3">
+                <div class="box-body p-0">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="p-3 d-flex align-items-center osahan-post-header"
+                      >
+                        <div class="dropdown-list-image mr-1 ml-1">
+                          <i class="fa-solid fas fa-lock"></i>
+                        </div>
+                        <div
+                          class="font-weight-normal mr-3 cursor_notification"
+                        >
+                          <div class="text-truncate NotificationBody">
+                            Lorem ipsum dolor sit amet,
+                            <span class="redText">consectetur</span> adipiscing
+                            elit.
+                          </div>
+                          <div class="small">2 hrs ago</div>
+                        </div>
+
+                        <!-- <span class="mb-0">
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm rounded"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="mdi mdi-dots-vertical"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box shadow-sm rounded bg-Grey mb-3">
+                <div class="box-body p-0">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="p-3 d-flex align-items-center osahan-post-header"
+                      >
+                        <div class="dropdown-list-image mr-1 ml-1">
+                          <i class="fa-solid fas fa-lock"></i>
+                        </div>
+                        <div
+                          class="font-weight-normal mr-3 cursor_notification"
+                        >
+                          <div class="text-truncate NotificationBody">
+                            Lorem ipsum dolor sit amet,
+                            <span class="GreenText">consectetur</span>
+                            adipiscing elit.
+                          </div>
+                          <div class="small">2 hrs ago</div>
+                        </div>
+
+                        <!-- <span class="mb-0">
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-light btn-sm rounded"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="mdi mdi-dots-vertical"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                          </button>
+                        </div>
+                      </span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> -->
-
-        <!--Normal User Data Table-->
-        <EmployeeAttendanceEntry
-          v-if="
-            hasPermission('view_attendancerecord') && attendance_list_render
-          "
-        />
-        <div>
-          <AttendanceEntry v-if="attendance_list_render" />
         </div>
+        <div class="row mt-3">
+          <div class="col-md-9"></div>
+          <div class="col-md-3"></div>
+        </div>
+
+        <!-- Time -->
       </div>
     </template>
   </Master>
@@ -85,24 +355,19 @@
 
 <script>
 import Master from "../components/layouts/Master";
-import AttendanceEntry from "../components/AttendanceModule/AttendanceRecords/AttendanceEntry";
-import EmployeeAttendanceEntry from "../components/AttendanceModule/AttendanceRecords/EmployeeAttendanceRecords";
-
-import NoticeWidget from "../components/Dashboard/NoticeWidget.vue";
+import NotificationBell from "../components/NotificationList/NotificationBell.vue";
+// import NoticeWidget from "../components/Dashboard/NoticeWidget.vue";
 
 import axios from "axios";
 import Swal from "sweetalert2";
 import permissions from "../authorization/permissions";
-import { DatePicker } from "v-calendar";
 
 export default {
   name: "Dashboard",
   components: {
     Master,
-    AttendanceEntry,
-    EmployeeAttendanceEntry,
-    NoticeWidget,
-    DatePicker,
+    // NoticeWidget,
+    NotificationBell,
   },
   data() {
     return {
@@ -291,6 +556,8 @@ export default {
 
 .card {
   border-left: none;
+  background: #3b414d;
+  border-radius: 5px;
 }
 .glow-on-hover {
   width: 220px;
@@ -512,5 +779,174 @@ export default {
   background: #00abb3;
   color: white;
   padding: 1.8rem 1.5rem;
+}
+.shutterSensor {
+  /* Shutter sensor */
+
+  position: absolute;
+  /* width: 121px; */
+  height: 32px;
+  left: 60px;
+  top: 22px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.3px;
+
+  color: #ffffff;
+}
+.overviewMarign {
+  margin-top: 0px;
+}
+.fa-bars:before {
+  content: "\f0c9";
+  color: #ffffff;
+  font-size: 65px;
+}
+.pe-7s-timer:before {
+  content: "";
+  font-size: 35px;
+  color: white;
+}
+.card-title {
+  color: white;
+}
+/* new design */
+.dropdown-list-image {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.dropdown-list-image img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.btn-light {
+  color: #2cdd9b;
+  background-color: #e5f7f0;
+  border-color: #d8f7eb;
+}
+.small {
+  font-size: 80%;
+  font-weight: 600;
+  color: #69c5a5;
+}
+h6,
+.h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.fa-eye-slash:before {
+  color: #69c5a5;
+}
+.fa-ellipsis-v:before {
+  content: "\f142";
+  font-size: 14px;
+  color: #69c5a5;
+}
+hr {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* nav tab  view */
+.nav-item .nav-link {
+  color: #69c5a5;
+}
+.nav-pills .nav-link.active {
+  background: #69c5a5 !important;
+  color: white !important;
+}
+.nav-pills,
+.nav-tabs {
+  margin-bottom: 0rem;
+  border: 1px solid #69c5a5;
+  border-radius: 0.25rem;
+}
+.nav-item {
+  margin: 0px 0px 0px 0px !important;
+}
+.nav-pills .nav-link {
+  border-radius: 0rem;
+}
+.nav-pills .nav-link:hover {
+  color: #69c5a5 !important;
+}
+.nav-pills .nav-link.active:hover {
+  background: #69c5a5 !important;
+  color: white !important;
+}
+/* .nav-pills .nav-link .active:hover {
+  color: #69c5a5 !important;
+} */
+.cursor_notification {
+  cursor: pointer;
+}
+.font-weight-normal {
+  font-weight: 500 !important;
+}
+.text-truncate {
+  /* overflow: hidden;
+    text-overflow: ellipsis; */
+  white-space: normal !important;
+}
+/* .unseen {
+  color: #16181b;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  opacity: 0.62;
+} */
+.dropdown-menu {
+  min-width: 10.5rem !important;
+}
+.fa-lock:before {
+  content: "\f023";
+  color: #bababa;
+  font-size: 25px;
+  color: white;
+}
+.small {
+  color: white;
+}
+.NotificationBody {
+  color: white;
+}
+.GreenText {
+  color: #0de60d;
+}
+.redText {
+  color: red;
+}
+.yellowText {
+  color: yellow;
+}
+.bg-Grey {
+  background: #383c45;
+}
+.NotifySubHeader {
+  color: white;
+  font-weight: bold;
+}
+fa-ellipsis-h:before {
+  content: "\f141";
+  font-size: 30px;
+  color: white;
+}
+.Notification_title {
+  color: white;
+}
+.notification_container {
+  background: #3b414d;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 24px;
+  /* gap: 24px; */
 }
 </style>

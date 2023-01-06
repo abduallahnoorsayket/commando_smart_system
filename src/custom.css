@@ -3,6 +3,10 @@ body {
   font-family: "Nunito", sans-serif !important;
   font-size: 14px;
 }
+
+.app-theme-white .app-page-title {
+  background: #3c4048;
+}
 .app-theme-white .app-header {
   background: #69c5a5;
 }
@@ -1832,6 +1836,7 @@ input[type="range"]:focus::-ms-fill-upper {
   display: initial;
   z-index: 8;
   position: relative;
+  background: #3c4048;
 }
 /* for loader */
 #axiosForm {
@@ -1901,4 +1906,10 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 220px !important;
   background: #3c4048;
   font-size: 18px;
+}
+.dashText {
+  margin-top: -10px;
+}
+.card {
+  border: none;
 }

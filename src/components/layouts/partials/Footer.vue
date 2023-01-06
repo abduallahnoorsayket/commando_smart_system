@@ -2,9 +2,7 @@
   <div class="footerContainer">
     <p class="text-center mt-2">
       <strong>
-        <span class="company" v-if="this_year"
-          >Cloud Production © {{ this_year }}</span
-        >
+        <span>A product of Bondstein Technology Limited</span>
       </strong>
     </p>
   </div>
@@ -34,7 +32,11 @@ export default {
 .company {
   color: #69c5a5;
 }
+
 .footerContainer {
-  border-top: 1px solid #eaeaea;
+  /* border-top: 1px solid #eaeaea; */
+  color: white !important;
+  background: #3c4048;
+  padding: 10px;
 }
 </style>

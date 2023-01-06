@@ -16,7 +16,7 @@
       <span
         class="badge badge-danger rounded-circle noti-icon-badge UnseenCount"
         v-else
-        >0</span
+        >5</span
       >
     </a>
     <div
@@ -387,7 +387,7 @@ a:hover {
 }
 .UnseenCount {
   display: inline-block;
-  background-color: #e96154;
+  background: #00abb3;
   border-radius: 50%;
   border: 2px solid #57c5a5;
   position: absolute;
@@ -458,7 +458,7 @@ a:hover {
 }
 .pe-7s-bell:before {
   /* content: ""; */
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   font-weight: bold;
 }

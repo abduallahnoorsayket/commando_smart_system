@@ -45,7 +45,7 @@
     <div class="scrollbar-sidebar">
       <div class="app-sidebar__inner">
         <!-- new dashboard menu -->
-        <ul class="vertical-nav-menu mt-2">
+        <ul class="vertical-nav-menu mt-3 pt-4">
           <li>
             <router-link
               :to="{ path: '/dashboard' }"
@@ -83,11 +83,45 @@
             </router-link>
           </li>
         </ul>
+        <ul class="vertical-nav-menu mt-5 pt-5">
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+        <ul class="vertical-nav-menu mt-5 pt-5">
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+        <ul class="vertical-nav-menu mt-5 pt-5">
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+
+        <ul class="vertical-nav-menu mt-5 pt-5">
+          <li>
+            <a href=""> <i class="fas fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
+
         <!-- new dashboard menu  end-->
         <!-- demo Menu start -->
         <!-- demo Menu end -->
       </div>
+      <!-- <ul class="vertical-nav-menu mt-3 pt-4">
+        <li>
+          <router-link
+            :to="{ path: '/dashboard' }"
+            :class="{ 'mm-active': currentRoutePath(['/dashboard']) }"
+          >
+            <i class="metismenu-icon pe-7s-timer"></i>
+            {{ $store.getters.GET_DASHBOARD }}
+          </router-link>
+        </li>
+      </ul> -->
     </div>
+
     <!--Sidebar Menu End-->
   </div>
 </template>
@@ -390,5 +424,9 @@ details > summary::-webkit-details-marker {
 .app-theme-white .app-sidebar {
   background: #3c4048 !important;
   color: white !important;
+}
+.fa-sign-out-alt:before {
+  content: "\f2f5";
+  font-size: 15px;
 }
 </style>
