@@ -33,11 +33,11 @@
             <div class="main-card card safeCard">
               <div class="card-body">
                 <div class="float-left">
-                  <h4>Your shop is in safe hands</h4>
-                  <p>Everything is looking fine.</p>
+                  <h4>Incident detected</h4>
+                  <p>Please take necessary action</p>
                 </div>
                 <div class="float-right">
-                  <i class="fas fa-superpowers" aria-hidden="true"></i>
+                  <i class="fa-solid fas fa-fire"></i>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="main-card card">
+                <div class="main-card card SmokeDetected">
                   <div class="detailContaier">
                     <div class="float-left">
                       <h3>
@@ -791,7 +791,7 @@ export default {
   border-radius: 20px;
 }
 .safeCard {
-  background: #00abb3;
+  background: #f96666;
   color: white;
   padding: 1.8rem 1.5rem;
 }
@@ -962,7 +962,15 @@ fa-ellipsis-h:before {
   flex-direction: column;
   align-items: center; */
   padding: 2px 0px;
+
   /* gap: 24px; */
 }
-
+.SmokeDetected {
+  background: #f96666;
+}
+.fa-fire:before {
+  content: "\f06d";
+  font-size: 65px;
+  margin: 10px 40px 0px 0px;
+}
 </style>

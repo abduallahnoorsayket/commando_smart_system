@@ -171,6 +171,9 @@ import VoiceConfiguration from "../components/VoiceModule/VoiceConfiguration";
 // dashboard widgets
 // notice
 import NoticeWidget from "../components/Dashboard/NoticeWidget";
+import SmokeDetected from "../views/SmokeDetected";
+import MotionIncidentDetected from "../views/MotionIncidentDetected";
+import GasIncidentDetected from "../views/GasIncidentDetected";
 
 /*  test componenWorkStatust*/
 // import TestComponent from "../components/layouts/partials/Attendance/AttendanceRecords/TestComponent.vue";
@@ -213,23 +216,25 @@ function guardMyRoute(to, from, next) {
 
 // routes
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "Login",
-  //   component: Login,
-  // },
-
-  // {
-  //   path: "/dashboard",
-  //   name: "Dashboard",
-  //   component: Dashboard,
-    
-  // },
   {
     path: "/dashboard/Incident_not_detected",
     name: "Dashboard",
     component: Dashboard,
-    
+  },
+  {
+    path: "/dashboard/Smoke_Incident_detected",
+    name: "DashSmokeDetectedboard",
+    component: SmokeDetected,
+  },
+  {
+    path: "/dashboard/Motion_Incident_detected",
+    name: "MotionIncidentDetected",
+    component: MotionIncidentDetected,
+  },
+  {
+    path: "/dashboard/Gas_Incident_detected",
+    name: "GasIncidentDetected",
+    component: GasIncidentDetected,
   },
   {
     path: "/error-page",
