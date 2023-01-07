@@ -100,13 +100,13 @@
                     aria-hidden="true"
                     class="dropdown-menu dropdown-menu-right"
                   >
-                    <router-link
+                    <!-- <router-link
                       class="dropdown-item"
                       :to="{ name: 'UserProfile' }"
                       >{{ $store.getters.GET_PROFILE }}</router-link
                     >
 
-                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <div tabindex="-1" class="dropdown-divider"></div> -->
 
                     <router-link
                       class="dropdown-item"
@@ -175,7 +175,7 @@ export default {
   },
 
   created() {
-    this.initialLoad();
+    // this.initialLoad();
     // const token = localStorage.getItem("token");
     // if (token) {
     //   this.fetchAuthenticatedUser(token);
