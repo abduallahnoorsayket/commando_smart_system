@@ -1,8 +1,4 @@
-## CPL Evaluation Portal (Frontend)
-* Live: http://118.27.10.116:5000/
-* Backend: http://0.0.0.0:8000/
-* Frontend: http://0.0.0.0:5000/
-* DockerHub: https://hub.docker.com/u/siyam04
+
 
 ### NPM Commands
 * Run Server
