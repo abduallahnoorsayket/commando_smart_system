@@ -33,125 +33,23 @@
             <div class="main-card card safeCard">
               <div class="card-body">
                 <div class="float-left">
-                  <h4>Your shop is in safe hands</h4>
-                  <p>Everything is looking fine.</p>
+                  <h4>Motion Status</h4>
+                  <h6>Enable</h6>
+                  <p>Last updated 2 hr. ago</p>
                 </div>
                 <div class="float-right">
-                  <i class="fas fa-superpowers" aria-hidden="true"></i>
+                  <i class="fa-solid fas fa-fire"></i>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="main-card card">
-                  <div class="detailContaier">
-                    <h3>
-                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
-                      <span class="shutterSensor ml-2 mt-1"
-                        >Shutter sensor</span
-                      >
-                    </h3>
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="text-center">
-                          <i class="fa-solid fas fa-bars mb-4"></i>
-                          <h5 class="card-title">Close</h5>
-                          <span class="text-muted">Last updated 2 hr. ago</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="main-card card">
-                  <div class="detailContaier">
-                    <h3>
-                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
-                      <span class="shutterSensor ml-2 mt-1">Smoke sensor</span>
-                    </h3>
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="text-center">
-                          <i class="fa-solid fas fa-bars mb-4"></i>
-                          <h5 class="card-title">No smoke</h5>
-                          <span class="text-muted">Last updated 2 hr. ago</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="main-card card">
-                  <div class="detailContaier">
-                    <div class="float-left">
-                      <h3>
-                        <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
-                        <span class="shutterSensor ml-2 mt-1"
-                          >Motion sensor</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="float-right">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-
-                    <div class="row mt-5">
-                      <div class="col-md-12">
-                        <div class="text-center">
-                          <i class="fa-solid fas fa-bars mb-4"></i>
-                          <h5 class="card-title">No Motion</h5>
-                          <span class="text-muted">Last updated 2 hr. ago</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="main-card card">
-                  <div class="detailContaier">
-                    <h3>
-                      <i class="metismenu-icon pe-7s-timer shutterIcon"></i>
-                      <span class="shutterSensor ml-2 mt-1">Gas sensor</span>
-                    </h3>
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="text-center">
-                          <i class="fa-solid fas fa-bars mb-4"></i>
-                          <h5 class="card-title">No Gas</h5>
-                          <span class="text-muted">Last updated 2 hr. ago</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row"></div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-9">
             <div class="notification_container">
-              <div class="row mb-4">
-                <div class="col-md-12">
-                  <div class="float-left">
-                    <h4>
-                      <NotificationBell />
-                      <span class="Notification_title">Notification</span>
-                    </h4>
-                  </div>
-                  <div class="float-right mr-3">
-                    <!-- <i class="mdi mdi-dots-vertical"></i> -->
-                    <i class="fas fa-ellipsis-h"></i>
-                  </div>
-                </div>
-              </div>
+              <div class="row mb-4"></div>
               <h6 class="NotifySubHeader">Today</h6>
               <div class="box shadow-sm rounded bg-Grey mb-3">
                 <div class="box-body p-0">
@@ -356,9 +254,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-md-9"></div>
           <div class="col-md-3"></div>
         </div>
 
@@ -370,7 +265,6 @@
 
 <script>
 import Master from "../components/layouts/Master";
-import NotificationBell from "../components/NotificationList/NotificationBell.vue";
 // import NoticeWidget from "../components/Dashboard/NoticeWidget.vue";
 
 import axios from "axios";
@@ -382,7 +276,6 @@ export default {
   components: {
     Master,
     // NoticeWidget,
-    NotificationBell,
   },
   data() {
     return {
@@ -791,7 +684,7 @@ export default {
   border-radius: 20px;
 }
 .safeCard {
-  background: #00abb3;
+  /* background: #f96666; */
   color: white;
   padding: 1.8rem 1.5rem;
 }
@@ -962,20 +855,15 @@ fa-ellipsis-h:before {
   flex-direction: column;
   align-items: center; */
   padding: 2px 0px;
+
   /* gap: 24px; */
 }
-@media (max-width: 414px) {
-  .shutterSensor {
-    font-size: 16px;
-  }
-  .fa-bars:before {
-    content: "\f0c9";
-    color: #ffffff;
-    font-size: 45px !important;
-  }
-  .card-title {
-    color: white;
-    font-size: 12px;
-  }
+.SmokeDetected {
+  background: #f96666;
+}
+.fa-fire:before {
+  content: "\f06d";
+  font-size: 65px;
+  margin: 10px 40px 0px 0px;
 }
 </style>

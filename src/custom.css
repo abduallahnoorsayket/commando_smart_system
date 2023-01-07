@@ -1975,3 +1975,30 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 414px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .shutterSensor {
+    font-size: 16px;
+  }
+  .fa-bars:before {
+    content: "\f0c9";
+    color: #ffffff;
+    font-size: 45px !important;
+  }
+  .card-title {
+    color: white;
+    font-size: 12px;
+  }
+  .app-theme-white .app-header {
+    background: #3c4048;
+  }
+  .btn-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: #3c4048;
+  }
+}
