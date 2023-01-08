@@ -1,3 +1,18 @@
+Please after running npm run serve go to localhost
+an then go towards these routes for seeing the
+pages given by figma.Thanks.
+
+
+    path: "/dashboard/Incident_not_detected",
+    
+    path: "/dashboard/Smoke_Incident_detected",
+    
+    path: "/dashboard/Motion_Incident_detected",
+    
+    path: "/dashboard/Gas_Incident_detected",
+    
+    path: "/dashboard/Activity_motion",
+ 
 
 
 ### NPM Commands
